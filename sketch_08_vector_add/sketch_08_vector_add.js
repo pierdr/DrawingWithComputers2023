@@ -20,8 +20,13 @@ function draw() {
   var p2 = p5.Vector.add(p1,changeVec);
   line(p1.x,p1.y,p2.x,p2.y);
   
-  
   changeVec.rotate(radians(30));
   var p3 = p5.Vector.add(p2,changeVec);
   line(p2.x,p2.y,p3.x,p3.y);
+  
+  changeVec.setHeading(radians(-120));
+  changeVec.setMag(75);
+  var p4 = p5.Vector.add(p1,changeVec);
+  line(p1.x,p1.y,p4.x,p4.y);
+
 }
