@@ -5,7 +5,7 @@ int diameter = 0;
 
 void setup()
 {
-  let fs = fullscreen();
+  
   //setup is a function and it is called just once at the beginning of a program
   diameter = 10;
 }
