@@ -3,7 +3,6 @@ function preload()
 {
   video = createVideo(['data/giphy.mp4']);
   video.hide();
-  
 }
 function setup() {
     createCanvas(windowWidth, windowHeight);
