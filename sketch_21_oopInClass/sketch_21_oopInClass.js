@@ -49,11 +49,6 @@ function mouseMoved()
 }
 
 
-
-
-
-
-
 function stem(x,y,size)
 {
   //code for the stem

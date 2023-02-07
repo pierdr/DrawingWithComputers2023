@@ -5,7 +5,7 @@ class Flower{
    this.pos = createVector(x_,y_);
    
    this.size = size_;
-   this.x = x_;
+   
  }
   
   show()
@@ -21,7 +21,7 @@ class Flower{
     //head
     ellipse(this.pos.x,this.pos.y,this.size*mult,this.size*mult);
     
-    console.log(this.x);
+  
   }
   
   
