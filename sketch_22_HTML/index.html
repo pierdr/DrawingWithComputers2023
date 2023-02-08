@@ -3,12 +3,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
-  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
-  <script language="javascript" type="text/javascript" src="YearObject.js"></script>
-  <script language="javascript" type="text/javascript" src="dataManager.js"></script>
-  <script language="javascript" type="text/javascript" src="sketch_22_HTML.js"></script>
-  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+  
 
   <!-- This line removes any default padding and style.
        You might only need one of these values set. -->
@@ -28,6 +23,7 @@
       width:100%;
       background-color:rgb(243  , 162  , 98  );
       border:2px solid black;
+      overflow-y:scroll;
     }
     #clear_selection{
       width-min:100px
@@ -40,7 +36,18 @@
 </head>
 
 <body>
+
 <div id="container">
+<button id="clear_button">Clear</button>
+  <ul id="list">
+  </ul>
 </div>
+<!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="Model.js"></script>
+  <script language="javascript" type="text/javascript" src="YearObject.js"></script>
+  <script language="javascript" type="text/javascript" src="dataManager.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch_22_HTML.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
 </body>
 </html>
