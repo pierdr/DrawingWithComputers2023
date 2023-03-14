@@ -6,7 +6,7 @@ function setup() {
 
   var keyword = 'Trichophorum bracteatum';
   loadJSON(`http://localhost:3000/search?q=${keyword}`, handleApiResponseGrass);
-  keywordHawk = 'hawk';
+  keyword = 'hawk';
   loadJSON(`http://localhost:3000/search?q=${keyword}`, handleApiResponseHawk);
 }
 
@@ -32,7 +32,7 @@ function draw() {
   //{
     if(imgHawk != null)
     {
-      image(img,0,0,width/2,height);
+      image(imgHawk,0,0,width/2,height);
     } 
     if(imgGrass != null)
     {
