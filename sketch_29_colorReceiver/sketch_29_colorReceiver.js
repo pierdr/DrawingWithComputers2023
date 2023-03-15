@@ -1,14 +1,15 @@
-let socket;
+let connection;
 let receivedColor;
+
 function setup() {
   createCanvas(400, 400);
   background(0);
   receivedColor = color(0,0,0);
   // Connect to web socket server on port 8009
-  socket = new WebSocket('ws://localhost:8009');
+  connection = new WebSocket('ws://10.28.78.30:8009');
 
   // When a message is received from the server
-  socket.onmessage = function(event) {
+  connection.onmessage = function(event) {
     console.log(event);
     let data = JSON.parse(event.data);
     receivedColor = color(data.col.r, data.col.g, data.col.b);
